@@ -1,0 +1,76 @@
+10:05:50,811 ERROR LogTest:8 - error日志级别....
+10:05:50,814  WARN LogTest:9 - warn日志级别....
+10:05:50,814  INFO LogTest:10 - info日志级别....
+10:05:50,814 DEBUG LogTest:11 - debug日志级别....
+10:47:52,253 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+10:47:52,455 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:47:52,455 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:47:52,456 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:47:52,456 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:47:52,566 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+10:47:52,795 DEBUG PooledDataSource:406 - Created connection 495792375.
+10:47:52,795 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d8d30f7]
+10:47:52,798 DEBUG findByFirstName:159 - ==>  Preparing: select * from t_user where username like ? 
+10:47:52,822 DEBUG findByFirstName:159 - ==> Parameters: 顾%(String)
+10:47:52,844 DEBUG findByFirstName:159 - <==      Total: 2
+10:47:52,849 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d8d30f7]
+10:47:52,849 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d8d30f7]
+10:47:52,850 DEBUG PooledDataSource:363 - Returned connection 495792375 to pool.
+10:49:59,720 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+10:49:59,849 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:49:59,849 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:49:59,850 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:49:59,850 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:50:58,142 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+10:50:58,285 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:50:58,286 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:50:58,287 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:50:58,288 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:51:30,259 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+10:51:30,395 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:51:30,395 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:51:30,396 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:51:30,396 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:51:30,608 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+10:51:30,822 DEBUG PooledDataSource:406 - Created connection 1773206895.
+10:51:30,823 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@69b0fd6f]
+10:51:30,826 DEBUG findByFirstName02:159 - ==>  Preparing: select * from t_user where username like '顾%' 
+10:51:30,852 DEBUG findByFirstName02:159 - ==> Parameters: 
+10:51:30,875 DEBUG findByFirstName02:159 - <==      Total: 2
+10:51:30,879 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@69b0fd6f]
+10:51:30,880 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@69b0fd6f]
+10:51:30,880 DEBUG PooledDataSource:363 - Returned connection 1773206895 to pool.
+10:59:16,086 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+10:59:16,237 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:59:16,237 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:59:16,238 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:59:16,238 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+10:59:16,333 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+10:59:16,535 DEBUG PooledDataSource:406 - Created connection 738433734.
+10:59:16,535 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c039ac6]
+10:59:16,538 DEBUG findByQueryVo:159 - ==>  Preparing: select * from t_user where uid>? 
+10:59:16,561 DEBUG findByQueryVo:159 - ==> Parameters: 2(Integer)
+10:59:16,587 DEBUG findByQueryVo:159 - <==      Total: 5
+10:59:16,591 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c039ac6]
+10:59:16,591 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c039ac6]
+10:59:16,592 DEBUG PooledDataSource:363 - Returned connection 738433734 to pool.
+11:09:07,278 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+11:09:07,389 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+11:09:07,390 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+11:09:07,391 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+11:09:07,391 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+11:09:07,489 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+11:09:07,707 DEBUG PooledDataSource:406 - Created connection 648525677.
+11:09:07,708 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+11:09:07,710 DEBUG findByUid:159 - ==>  Preparing: select uid uid_,username username_ ,birthday birthday_ ,sex sex_ ,address address_ from t_user where uid = ? 
+11:09:07,733 DEBUG findByUid:159 - ==> Parameters: 6(Integer)
+11:09:07,756 DEBUG findByUid:159 - <==      Total: 1
+11:09:07,759 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+11:09:07,760 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+11:09:07,761 DEBUG PooledDataSource:363 - Returned connection 648525677 to pool.
+17:09:33,929 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+17:09:34,303 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:09:34,303 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:09:34,303 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:09:34,304 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:09:34,430 DEBUG JdbcTransaction:137 - Opening JDBC Connection

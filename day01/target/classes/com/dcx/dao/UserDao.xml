@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcx.dao.UserDao">
+    <select id="findAll" resultType="com.dcx.pojo.User">
+        select * from t_user
+    </select>
+    <insert id="save" parameterType="com.dcx.pojo.User">
+        <!--resultType: 主键类型; keyProperty:pojo里面对应的id的属性名; order属性: 指定是在目标的sql语句之前还是之后执行 -->
+        <selectKey resultType="int" keyProperty="uid" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into t_user(username,sex,birthday,address) values(#{username},#{sex},#{birthday},#{address})
+    </insert>
+    <update id="update" parameterType="com.dcx.pojo.User">
+        update t_user set  username=#{username},sex=#{sex},birthday=#{birthday},address=#{address} WHERE uid=#{uid}
+    </update>
+    <delete id="delete" parameterType="int">
+        delete from t_user where uid=#{uid}
+    </delete>
+    <select id="findByFirstName" parameterType="String" resultType="com.dcx.pojo.User">
+        select * from t_user where username like #{firstName}
+    </select>
+    <select id="findByFirstName02" parameterType="String" resultType="com.dcx.pojo.User">
+        select * from t_user where username like '${value}%'
+    </select>
+    <select id="findByQueryVo" resultType="com.dcx.pojo.User" parameterType="com.dcx.pojo.QueryVo">
+        select * from t_user where 1=1
+        <if test="user!=null and user.uid!=0">
+            AND uid >#{user.uid}
+        </if>
+        <if test="user!=null and user.username!=null and user.username!=''">
+            and username like #{user.username}
+        </if>
+    </select>
+    <select id="findCount" parameterType="int" resultType="int">
+        select count(*) from t_user
+    </select>
+    <select id="findByUid" parameterType="int" resultMap="findByUidMap">
+        select uid uid_,username username_ ,birthday birthday_ ,sex sex_ ,address address_  from t_user where uid = #{id}
+    </select>
+    <resultMap id="findByUidMap" type="com.dcx.pojo.User">
+        <id property="uid" column="uid_"></id>
+        <result property="username" column="username_"></result>
+        <result property="birthday" column="birthday_"></result>
+        <result property="sex" column="sex_"></result>
+        <result property="address" column="address_"></result>
+    </resultMap>
+</mapper>
